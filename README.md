@@ -15,6 +15,9 @@ multipass launch --name k0s --mem 4G --disk 20G --cpus 2
 # Usage
 
 ```bash
+# connect to the VM
+multipass exec k0s -- sudo -i
+
 # install k0s
 curl -sSLf https://get.k0s.sh | sudo K0S_VERSION=v1.24.3+k0s.0 sh
 
